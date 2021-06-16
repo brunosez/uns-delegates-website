@@ -6,12 +6,13 @@ function customSlugifyToHandleBadges(str) {
   return vuePressSlugify(str.replace(/<Badge[^>]*\/>/, ""));
 }
 
-const DOMAIN = "delegates.uns.network";
+const DOMAIN = "delegates.unikname.network";
 const HOSTNAME = `https://${DOMAIN}`;
 
 module.exports = {
-  title: "uns.network delegates",
-  description: "Explore the delegate's profiles of the uns.network blockchain",
+  title: "unikname.network delegates",
+  description:
+    "Explore the delegate's profiles of the unikname.network blockchain",
   plugins: [
     [
       "@vuepress/last-updated",
@@ -56,7 +57,7 @@ module.exports = {
           };
         },
         description: ($page) => {
-          return "Explore the delegate's profile of the uns.network blockchain";
+          return "Explore the delegate's profile of the unikname.network blockchain";
         },
         image: ($page, $site) =>
           $site.themeConfig.domain +
@@ -91,7 +92,7 @@ module.exports = {
     repo: "unik-name/uns-delegates-website",
     hostname: HOSTNAME,
     domain: HOSTNAME,
-    author: "UNS.network Team",
+    author: "unikname.network Team",
     repoLabel: "Contribute!",
     editLinks: true,
     editLinkText: "",
@@ -100,9 +101,12 @@ module.exports = {
     activeHeaderLinks: true,
     nav: [
       { text: "Get my @unikname ID", link: "https://my.unikname.app" },
-      { text: "UNS Home", link: "https://uns.network" },
-      { text: "UNS Explorer", link: "https://explorer.uns.network" },
-      { text: "UNS Docs", link: "https://docs.uns.network" },
+      { text: "unikname.network", link: "https://www.unikname.network" },
+      {
+        text: "Explorer",
+        link: "https://explorer.unikname.network",
+      },
+      { text: "Docs", link: "https://docs.unikname.network" },
     ],
   },
   markdown: {
